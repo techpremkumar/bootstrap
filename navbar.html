@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Title displayed in the browser tab -->
+    <title>Bootstrap Navbar Complete Example</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         NAVBAR START
+         navbar             : Creates a Bootstrap navigation bar
+         navbar-expand-lg   : Expands navbar on large screens
+                              and collapses on smaller screens
+         navbar-dark        : Makes text white
+         bg-dark            : Gives dark background
+    =========================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <!-- ======================================================
+             container : Keeps navbar content aligned and responsive
+        ======================================================= -->
+
+        <div class="container">
+
+            <!-- ==================================================
+                 navbar-brand : Website logo or brand name
+            =================================================== -->
+
+            <a class="navbar-brand" href="#">
+                Code IO
+            </a>
+
+            <!-- ==================================================
+                 navbar-toggler : Creates hamburger button
+                 type="button"  : Button type
+                 data-bs-toggle="collapse"
+                                : Toggles collapsed menu
+                 data-bs-target="#navbarMenu"
+                                : Targets the menu by ID
+            =================================================== -->
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <!-- Hamburger Icon -->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- ==================================================
+                 collapse              : Hides menu on small screens
+                 navbar-collapse       : Bootstrap collapse styling
+                 id="navbarMenu"       : Target for toggle button
+            =================================================== -->
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <!-- ===============================================
+                     navbar-nav : Navigation menu
+                     ms-auto    : Moves menu to the right
+                ================================================ -->
+
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- ================= Home ================= -->
+
+                    <li class="nav-item">
+
+                        <!-- nav-link : Navigation link
+                             active   : Highlights current page -->
+
+                        <a class="nav-link active" href="#">
+                            Home
+                        </a>
+
+                    </li>
+
+                    <!-- ================= About ================= -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+
+                    </li>
+
+                    <!-- ================= Services ================= -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Services
+                        </a>
+
+                    </li>
+
+                    <!-- ================= Contact ================= -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+
+                    </li>
+
+                    <!-- ================= Login ================= -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">
+                            Login
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ==========================================================
+         PAGE CONTENT
+    =========================================================== -->
+
+    <div class="container mt-5">
+
+        <h2>Welcome to Bootstrap Navbar</h2>
+
+        <p>
+            This is the content section of the webpage.
+        </p>
+
+    </div>
+
+    <!-- ==========================================================
+         Bootstrap JavaScript Bundle
+         Required for Navbar Toggle Button
+    =========================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
